@@ -12,8 +12,6 @@
       color: #E2E8F0;
       overflow-x: hidden;
     }
-
-    /* ── Hero ── */
     .hero {
       background: linear-gradient(135deg, #1A0533 0%, #0D0D1A 50%, #0D0D1A 100%);
       text-align: center;
@@ -77,18 +75,8 @@
       position: relative;
     }
     .stat { text-align: center; }
-    .stat-num {
-      font-size: 32px;
-      font-weight: 700;
-      color: #7C3AED;
-    }
-    .stat-label {
-      font-size: 13px;
-      color: #64748B;
-      margin-top: 4px;
-    }
-
-    /* ── Section ── */
+    .stat-num { font-size: 32px; font-weight: 700; color: #7C3AED; }
+    .stat-label { font-size: 13px; color: #64748B; margin-top: 4px; }
     .section {
       max-width: 900px;
       margin: 0 auto;
@@ -115,8 +103,6 @@
       line-height: 1.6;
       margin-bottom: 48px;
     }
-
-    /* ── Features Grid ── */
     .features-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -129,10 +115,7 @@
       padding: 28px 24px;
       transition: border-color 0.3s, transform 0.3s;
     }
-    .feature-card:hover {
-      border-color: rgba(124,58,237,0.35);
-      transform: translateY(-3px);
-    }
+    .feature-card:hover { border-color: rgba(124,58,237,0.35); transform: translateY(-3px); }
     .feature-icon {
       width: 44px; height: 44px;
       border-radius: 12px;
@@ -148,18 +131,8 @@
     .icon-blue { background: rgba(59,130,246,0.12); }
     .icon-rose { background: rgba(244,63,94,0.12); }
     .icon-cyan { background: rgba(6,182,212,0.12); }
-    .feature-card h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .feature-card p {
-      font-size: 13px;
-      color: #94A3B8;
-      line-height: 1.5;
-    }
-
-    /* ── App Showcase ── */
+    .feature-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .feature-card p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
     .app-showcase {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -174,10 +147,7 @@
       overflow: hidden;
       transition: border-color 0.3s, transform 0.3s;
     }
-    .app-card:hover {
-      border-color: rgba(124,58,237,0.35);
-      transform: translateY(-3px);
-    }
+    .app-card:hover { border-color: rgba(124,58,237,0.35); transform: translateY(-3px); }
     .app-card::before {
       content: '';
       position: absolute;
@@ -197,25 +167,9 @@
     }
     .badge-live { background: rgba(34,197,94,0.12); color: #4ADE80; }
     .badge-soon { background: rgba(251,191,36,0.12); color: #FBBF24; }
-    .app-card h3 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      position: relative;
-    }
-    .app-card p {
-      font-size: 14px;
-      color: #94A3B8;
-      line-height: 1.6;
-      position: relative;
-    }
-    .app-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 16px;
-      position: relative;
-    }
+    .app-card h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; position: relative; }
+    .app-card p { font-size: 14px; color: #94A3B8; line-height: 1.6; position: relative; }
+    .app-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; position: relative; }
     .app-tag {
       padding: 4px 10px;
       border-radius: 6px;
@@ -224,8 +178,19 @@
       color: #94A3B8;
       border: 1px solid rgba(255,255,255,0.06);
     }
-
-    /* ── Values ── */
+    .data-card {
+      background: #1E1338;
+      border: 1px solid rgba(124,58,237,0.1);
+      border-radius: 20px;
+      padding: 40px 36px;
+    }
+    .data-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: #E2E8F0; }
+    .data-card p { font-size: 14px; color: #94A3B8; line-height: 1.7; margin-bottom: 12px; }
+    .data-card ul { color: #94A3B8; font-size: 14px; line-height: 1.7; margin: 0 0 12px 20px; }
+    .data-card li { margin-bottom: 4px; }
+    .data-card strong { color: #E2E8F0; }
+    .data-card a { color: #A78BFA; }
+    .data-divider { border: none; border-top: 1px solid rgba(124,58,237,0.1); margin: 24px 0; }
     .values-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -246,23 +211,9 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 8px;
     }
-    .value-card h3 {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .value-card p {
-      font-size: 13px;
-      color: #94A3B8;
-      line-height: 1.5;
-    }
-
-    /* ── Tech Stack ── */
-    .tech-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    .value-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .value-card p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
+    .tech-row { display: flex; flex-wrap: wrap; gap: 10px; }
     .tech-pill {
       padding: 8px 16px;
       border-radius: 10px;
@@ -272,23 +223,13 @@
       color: #A78BFA;
       border: 1px solid rgba(124,58,237,0.15);
     }
-
-    /* ── CTA ── */
     .cta {
       text-align: center;
       padding: 80px 20px;
       background: linear-gradient(180deg, #0D0D1A, #1A0533);
     }
-    .cta h2 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-    .cta p {
-      font-size: 16px;
-      color: #94A3B8;
-      margin-bottom: 32px;
-    }
+    .cta h2 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+    .cta p { font-size: 16px; color: #94A3B8; margin-bottom: 32px; }
     .cta-btn {
       display: inline-block;
       padding: 14px 32px;
@@ -301,20 +242,13 @@
       transition: opacity 0.2s;
     }
     .cta-btn:hover { opacity: 0.85; }
-
-    /* ── Footer ── */
     footer {
       text-align: center;
       padding: 40px 20px;
       border-top: 1px solid rgba(124,58,237,0.1);
     }
-    footer p {
-      font-size: 13px;
-      color: #64748B;
-    }
+    footer p { font-size: 13px; color: #64748B; margin-bottom: 12px; }
     footer a { color: #7C3AED; text-decoration: none; }
-
-    /* ── Responsive ── */
     @media (max-width: 768px) {
       .hero h1 { font-size: 36px; }
       .hero-stats { gap: 24px; }
@@ -327,7 +261,7 @@
 </head>
 <body>
 
-  <!-- ═══ Hero ═══ -->
+  <!-- Hero -->
   <div class="hero">
     <div class="hero-badge">Independent Developer</div>
     <h1>Apps built for <span>real life</span></h1>
@@ -348,12 +282,11 @@
     </div>
   </div>
 
-  <!-- ═══ Features ═══ -->
+  <!-- Features -->
   <div class="section">
     <div class="section-label">Why TimApp</div>
     <div class="section-title">Built differently</div>
     <div class="section-desc">Most apps collect your data. We do the opposite. Every app from TimApp is designed to work entirely on your phone.</div>
-
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon icon-purple">&#128274;</div>
@@ -388,12 +321,11 @@
     </div>
   </div>
 
-  <!-- ═══ Apps ═══ -->
+  <!-- Apps -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Our Apps</div>
     <div class="section-title">What we build</div>
     <div class="section-desc">Tools designed for real-world use cases — not just another todo app.</div>
-
     <div class="app-showcase">
       <div class="app-card">
         <span class="app-badge badge-live">Live</span>
@@ -408,7 +340,6 @@
           <span class="app-tag">PDF Receipts</span>
         </div>
       </div>
-
       <div class="app-card">
         <span class="app-badge badge-soon">Coming Soon</span>
         <h3>More Apps</h3>
@@ -420,11 +351,51 @@
     </div>
   </div>
 
-  <!-- ═══ Values ═══ -->
+  <!-- Data & Privacy (THIS IS THE KEY SECTION Google requires) -->
+  <div class="section" style="padding-top:0">
+    <div class="section-label">Data &amp; Privacy</div>
+    <div class="section-title">How we handle your data</div>
+    <div class="data-card">
+
+      <h3>Google Sign-In Data</h3>
+      <p>Our apps use Google Sign-In for user authentication. When you sign in, we access the following Google user data:</p>
+      <ul>
+        <li><strong>Email address</strong> — Used to verify your identity and manage your app license</li>
+        <li><strong>Display name</strong> — Shown in the app for personalization</li>
+        <li><strong>Profile picture</strong> — Displayed in the app for your profile</li>
+      </ul>
+      <p>This data is <strong>stored only on your device</strong> and is never uploaded to any external server. It is used exclusively for authentication and license verification within the app.</p>
+
+      <hr class="data-divider">
+
+      <h3>Application Data</h3>
+      <p>All personal and financial data you enter into our apps (loans, borrowers, transactions, expenses) is stored entirely on your device using a local SQLite database. This data:</p>
+      <ul>
+        <li><strong>Never leaves your device</strong> — no cloud sync, no backups to external servers</li>
+        <li><strong>Is never shared</strong> with third parties</li>
+        <li><strong>Is never used</strong> for analytics or advertising</li>
+      </ul>
+
+      <hr class="data-divider">
+
+      <h3>No Tracking</h3>
+      <p>We do not use any analytics tools, advertising SDKs, crash reporters, or tracking pixels. We have no way to see how you use the app or what data you enter.</p>
+
+      <hr class="data-divider">
+
+      <h3>Data Deletion</h3>
+      <p>You can delete all your data at any time from within the app (Settings → Delete All Data). Uninstalling the app also permanently removes all data from your device.</p>
+
+      <hr class="data-divider">
+
+      <p>For full details, read our <a href="privacy.html">complete Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <!-- Values -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Our Promise</div>
     <div class="section-title">What we stand for</div>
-
     <div class="values-grid">
       <div class="value-card">
         <div class="value-num">01</div>
@@ -444,7 +415,7 @@
     </div>
   </div>
 
-  <!-- ═══ Tech ═══ -->
+  <!-- Tech -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Tech Stack</div>
     <div class="section-title">Built with modern tools</div>
@@ -462,18 +433,18 @@
     </div>
   </div>
 
-  <!-- ═══ CTA ═══ -->
+  <!-- CTA -->
   <div class="cta">
     <h2>Ready to get started?</h2>
     <p>Download the app and take control of your data.</p>
     <a class="cta-btn" href="mailto:rupitim03@gmail.com">Contact Us</a>
   </div>
 
-   <!-- ═══ Footer ═══ -->
+  <!-- Footer -->
   <footer>
-    <p style="margin-bottom:12px">
-      <a href="privacy.html" style="color:#A78BFA;text-decoration:none">Privacy Policy</a> &nbsp;&bull;&nbsp;
-      <a href="mailto:rupitim03@gmail.com" style="color:#7C3AED;text-decoration:none">Contact</a>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> &nbsp;&bull;&nbsp;
+      <a href="mailto:rupitim03@gmail.com">Contact</a>
     </p>
     <p>Made with &#10084;&#65039; by TIM</p>
   </footer>
