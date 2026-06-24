@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://timapp-hub.github.io/sitemap.xml

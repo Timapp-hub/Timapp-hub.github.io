@@ -3,128 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="i4irMnZxIgaUWYFRCFN7i5LwuQGwl3gOaToBut3JHfU" />
+  <meta name="description" content="TimApp - Privacy-first mobile applications. 100% offline, zero data collection, no tracking.">
+  <meta property="og:title" content="TimApp - Apps Built for You">
+  <meta property="og:description" content="Privacy-first mobile applications. 100% offline, zero data collection.">
+  <meta property="og:url" content="https://timapp-hub.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimApp">
+  <link rel="canonical" href="https://timapp-hub.github.io/">
+  <link rel="privacy-policy" href="https://timapp-hub.github.io/privacy.html">
   <title>TimApp - Apps Built for You</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0D0D1A;
-      color: #E2E8F0;
-      overflow-x: hidden;
-    }
-    .hero {
-      background: linear-gradient(135deg, #1A0533 0%, #0D0D1A 50%, #0D0D1A 100%);
-      text-align: center;
-      padding: 100px 20px 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -200px; right: -200px;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -150px; left: -150px;
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-    .hero-badge {
-      display: inline-block;
-      padding: 6px 16px;
-      border-radius: 20px;
-      background: rgba(124,58,237,0.12);
-      border: 1px solid rgba(124,58,237,0.25);
-      color: #A78BFA;
-      font-size: 13px;
-      font-weight: 500;
-      margin-bottom: 24px;
-      position: relative;
-    }
-    .hero h1 {
-      font-size: 52px;
-      font-weight: 800;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 16px;
-      position: relative;
-    }
-    .hero h1 span {
-      background: linear-gradient(135deg, #7C3AED, #A78BFA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero p {
-      font-size: 19px;
-      color: #94A3B8;
-      max-width: 540px;
-      margin: 0 auto 40px;
-      line-height: 1.6;
-      position: relative;
-    }
-    .hero-stats {
-      display: flex;
-      justify-content: center;
-      gap: 48px;
-      position: relative;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0D0D1A; color: #E2E8F0; overflow-x: hidden; }
+    .hero { background: linear-gradient(135deg, #1A0533 0%, #0D0D1A 50%, #0D0D1A 100%); text-align: center; padding: 100px 20px 80px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -200px; right: -200px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%); border-radius: 50%; }
+    .hero-badge { display: inline-block; padding: 6px 16px; border-radius: 20px; background: rgba(124,58,237,0.12); border: 1px solid rgba(124,58,237,0.25); color: #A78BFA; font-size: 13px; font-weight: 500; margin-bottom: 24px; position: relative; }
+    .hero h1 { font-size: 52px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 16px; position: relative; }
+    .hero h1 span { background: linear-gradient(135deg, #7C3AED, #A78BFA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 19px; color: #94A3B8; max-width: 540px; margin: 0 auto 40px; line-height: 1.6; position: relative; }
+    .hero-stats { display: flex; justify-content: center; gap: 48px; position: relative; }
     .stat { text-align: center; }
     .stat-num { font-size: 32px; font-weight: 700; color: #7C3AED; }
     .stat-label { font-size: 13px; color: #64748B; margin-top: 4px; }
-    .section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-    .section-label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #7C3AED;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-    .section-title {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      font-size: 16px;
-      color: #94A3B8;
-      max-width: 600px;
-      line-height: 1.6;
-      margin-bottom: 48px;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 16px;
-    }
-    .feature-card {
-      background: #1E1338;
-      border: 1px solid rgba(124,58,237,0.1);
-      border-radius: 16px;
-      padding: 28px 24px;
-      transition: border-color 0.3s, transform 0.3s;
-    }
+    .section { max-width: 900px; margin: 0 auto; padding: 80px 20px; }
+    .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: #7C3AED; font-weight: 600; margin-bottom: 12px; }
+    .section-title { font-size: 36px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .section-desc { font-size: 16px; color: #94A3B8; max-width: 600px; line-height: 1.6; margin-bottom: 48px; }
+    .features-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .feature-card { background: #1E1338; border: 1px solid rgba(124,58,237,0.1); border-radius: 16px; padding: 28px 24px; transition: border-color 0.3s, transform 0.3s; }
     .feature-card:hover { border-color: rgba(124,58,237,0.35); transform: translateY(-3px); }
-    .feature-icon {
-      width: 44px; height: 44px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
+    .feature-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 16px; }
     .icon-purple { background: rgba(124,58,237,0.12); }
     .icon-green { background: rgba(34,197,94,0.12); }
     .icon-amber { background: rgba(251,191,36,0.12); }
@@ -133,57 +42,17 @@
     .icon-cyan { background: rgba(6,182,212,0.12); }
     .feature-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
     .feature-card p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
-    .app-showcase {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .app-card {
-      background: #1E1338;
-      border: 1px solid rgba(124,58,237,0.1);
-      border-radius: 20px;
-      padding: 36px 32px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.3s, transform 0.3s;
-    }
+    .app-showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .app-card { background: #1E1338; border: 1px solid rgba(124,58,237,0.1); border-radius: 20px; padding: 36px 32px; position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.3s; }
     .app-card:hover { border-color: rgba(124,58,237,0.35); transform: translateY(-3px); }
-    .app-card::before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 150px; height: 150px;
-      background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%);
-      border-radius: 50%;
-      transform: translate(30%, -30%);
-    }
-    .app-badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
+    .app-badge { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 11px; font-weight: 600; margin-bottom: 16px; }
     .badge-live { background: rgba(34,197,94,0.12); color: #4ADE80; }
     .badge-soon { background: rgba(251,191,36,0.12); color: #FBBF24; }
     .app-card h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; position: relative; }
     .app-card p { font-size: 14px; color: #94A3B8; line-height: 1.6; position: relative; }
     .app-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; position: relative; }
-    .app-tag {
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-size: 11px;
-      background: rgba(255,255,255,0.04);
-      color: #94A3B8;
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .data-card {
-      background: #1E1338;
-      border: 1px solid rgba(124,58,237,0.1);
-      border-radius: 20px;
-      padding: 40px 36px;
-    }
+    .app-tag { padding: 4px 10px; border-radius: 6px; font-size: 11px; background: rgba(255,255,255,0.04); color: #94A3B8; border: 1px solid rgba(255,255,255,0.06); }
+    .data-card { background: #1E1338; border: 1px solid rgba(124,58,237,0.1); border-radius: 20px; padding: 40px 36px; }
     .data-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: #E2E8F0; }
     .data-card p { font-size: 14px; color: #94A3B8; line-height: 1.7; margin-bottom: 12px; }
     .data-card ul { color: #94A3B8; font-size: 14px; line-height: 1.7; margin: 0 0 12px 20px; }
@@ -191,138 +60,49 @@
     .data-card strong { color: #E2E8F0; }
     .data-card a { color: #A78BFA; }
     .data-divider { border: none; border-top: 1px solid rgba(124,58,237,0.1); margin: 24px 0; }
-    .values-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 16px;
-    }
-    .value-card {
-      background: #1E1338;
-      border: 1px solid rgba(124,58,237,0.1);
-      border-radius: 16px;
-      padding: 32px 24px;
-      text-align: center;
-    }
-    .value-num {
-      font-size: 36px;
-      font-weight: 800;
-      background: linear-gradient(135deg, #7C3AED, #A78BFA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 8px;
-    }
+    .values-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .value-card { background: #1E1338; border: 1px solid rgba(124,58,237,0.1); border-radius: 16px; padding: 32px 24px; text-align: center; }
+    .value-num { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, #7C3AED, #A78BFA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
     .value-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
     .value-card p { font-size: 13px; color: #94A3B8; line-height: 1.5; }
     .tech-row { display: flex; flex-wrap: wrap; gap: 10px; }
-    .tech-pill {
-      padding: 8px 16px;
-      border-radius: 10px;
-      font-size: 13px;
-      font-weight: 500;
-      background: rgba(124,58,237,0.08);
-      color: #A78BFA;
-      border: 1px solid rgba(124,58,237,0.15);
-    }
-    .cta {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(180deg, #0D0D1A, #1A0533);
-    }
+    .tech-pill { padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 500; background: rgba(124,58,237,0.08); color: #A78BFA; border: 1px solid rgba(124,58,237,0.15); }
+    .cta { text-align: center; padding: 80px 20px; background: linear-gradient(180deg, #0D0D1A, #1A0533); }
     .cta h2 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
     .cta p { font-size: 16px; color: #94A3B8; margin-bottom: 32px; }
-    .cta-btn {
-      display: inline-block;
-      padding: 14px 32px;
-      border-radius: 12px;
-      background: #7C3AED;
-      color: #FFF;
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
+    .cta-btn { display: inline-block; padding: 14px 32px; border-radius: 12px; background: #7C3AED; color: #FFF; font-size: 15px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; margin: 6px; }
     .cta-btn:hover { opacity: 0.85; }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      border-top: 1px solid rgba(124,58,237,0.1);
-    }
+    .cta-btn-outline { background: transparent; border: 1px solid rgba(124,58,237,0.4); color: #A78BFA; }
+    footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(124,58,237,0.1); }
     footer p { font-size: 13px; color: #64748B; margin-bottom: 12px; }
     footer a { color: #7C3AED; text-decoration: none; }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 36px; }
-      .hero-stats { gap: 24px; }
-      .stat-num { font-size: 24px; }
-      .features-grid, .values-grid { grid-template-columns: 1fr; }
-      .app-showcase { grid-template-columns: 1fr; }
-      .section-title { font-size: 28px; }
-    }
+    @media (max-width: 768px) { .hero h1 { font-size: 36px; } .hero-stats { gap: 24px; } .stat-num { font-size: 24px; } .features-grid, .values-grid { grid-template-columns: 1fr; } .app-showcase { grid-template-columns: 1fr; } .section-title { font-size: 28px; } }
   </style>
-  <meta name="google-site-verification" content="i4irMnZxIgaUWYFRCFN7i5LwuQGwl3gOaToBut3JHfU" />
 </head>
 <body>
-
-  <!-- Hero -->
   <div class="hero">
     <div class="hero-badge">Independent Developer</div>
     <h1>Apps built for <span>real life</span></h1>
     <p>Practical mobile tools that keep your data where it belongs — on your device. No cloud, no subscriptions, no tracking.</p>
     <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Offline</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Data collected</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Ads shown</div>
-      </div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Offline</div></div>
+      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Data collected</div></div>
+      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Ads shown</div></div>
     </div>
   </div>
-
-  <!-- Features -->
   <div class="section">
     <div class="section-label">Why TimApp</div>
     <div class="section-title">Built differently</div>
     <div class="section-desc">Most apps collect your data. We do the opposite. Every app from TimApp is designed to work entirely on your phone.</div>
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon icon-purple">&#128274;</div>
-        <h3>100% Offline</h3>
-        <p>No internet required. Everything runs locally on your device.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-green">&#128272;</div>
-        <h3>Zero Data Collection</h3>
-        <p>No analytics, no trackers, no cloud. Your data never leaves your phone.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-amber">&#128176;</div>
-        <h3>No Subscriptions</h3>
-        <p>Pay once, use forever. No recurring charges, no hidden fees.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-blue">&#128241;</div>
-        <h3>Lightweight</h3>
-        <p>Small app size, fast performance. Works on any Android device.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-rose">&#128737;</div>
-        <h3>Secure by Design</h3>
-        <p>Local database, encrypted storage, biometric lock. Your data stays yours.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-cyan">&#9889;</div>
-        <h3>Instant Setup</h3>
-        <p>No account creation needed beyond Google Sign-In. Start using immediately.</p>
-      </div>
+      <div class="feature-card"><div class="feature-icon icon-purple">&#128274;</div><h3>100% Offline</h3><p>No internet required. Everything runs locally on your device.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-green">&#128272;</div><h3>Zero Data Collection</h3><p>No analytics, no trackers, no cloud. Your data never leaves your phone.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-amber">&#128176;</div><h3>No Subscriptions</h3><p>Pay once, use forever. No recurring charges, no hidden fees.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-blue">&#128241;</div><h3>Lightweight</h3><p>Small app size, fast performance. Works on any Android device.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-rose">&#128737;</div><h3>Secure by Design</h3><p>Local database, encrypted storage, biometric lock. Your data stays yours.</p></div>
+      <div class="feature-card"><div class="feature-icon icon-cyan">&#9889;</div><h3>Instant Setup</h3><p>No account creation needed beyond Google Sign-In. Start using immediately.</p></div>
     </div>
   </div>
-
-  <!-- Apps -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Our Apps</div>
     <div class="section-title">What we build</div>
@@ -332,32 +112,20 @@
         <span class="app-badge badge-live">Live</span>
         <h3>Chit Put</h3>
         <p>Complete loan management for individual money lenders. Track borrowers, collections, recurring deposits, expenses, and ledger — all offline.</p>
-        <div class="app-tags">
-          <span class="app-tag">Loans</span>
-          <span class="app-tag">Collections</span>
-          <span class="app-tag">Recurring Deposits</span>
-          <span class="app-tag">Ledger</span>
-          <span class="app-tag">Reports</span>
-          <span class="app-tag">PDF Receipts</span>
-        </div>
+        <div class="app-tags"><span class="app-tag">Loans</span><span class="app-tag">Collections</span><span class="app-tag">Recurring Deposits</span><span class="app-tag">Ledger</span><span class="app-tag">Reports</span><span class="app-tag">PDF Receipts</span></div>
       </div>
       <div class="app-card">
         <span class="app-badge badge-soon">Coming Soon</span>
         <h3>More Apps</h3>
         <p>We're building more practical tools for everyday use. Stay tuned for updates.</p>
-        <div class="app-tags">
-          <span class="app-tag">In Development</span>
-        </div>
+        <div class="app-tags"><span class="app-tag">In Development</span></div>
       </div>
     </div>
   </div>
-
-  <!-- Data & Privacy (THIS IS THE KEY SECTION Google requires) -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Data &amp; Privacy</div>
     <div class="section-title">How we handle your data</div>
     <div class="data-card">
-
       <h3>Google Sign-In Data</h3>
       <p>Our apps use Google Sign-In for user authentication. When you sign in, we access the following Google user data:</p>
       <ul>
@@ -366,89 +134,55 @@
         <li><strong>Profile picture</strong> — Displayed in the app for your profile</li>
       </ul>
       <p>This data is <strong>stored only on your device</strong> and is never uploaded to any external server. It is used exclusively for authentication and license verification within the app.</p>
-
       <hr class="data-divider">
-
       <h3>Application Data</h3>
-      <p>All personal and financial data you enter into our apps (loans, borrowers, transactions, expenses) is stored entirely on your device using a local SQLite database. This data:</p>
+      <p>All personal and financial data you enter into our apps is stored entirely on your device using a local SQLite database. This data:</p>
       <ul>
         <li><strong>Never leaves your device</strong> — no cloud sync, no backups to external servers</li>
         <li><strong>Is never shared</strong> with third parties</li>
         <li><strong>Is never used</strong> for analytics or advertising</li>
       </ul>
-
       <hr class="data-divider">
-
       <h3>No Tracking</h3>
       <p>We do not use any analytics tools, advertising SDKs, crash reporters, or tracking pixels. We have no way to see how you use the app or what data you enter.</p>
-
       <hr class="data-divider">
-
       <h3>Data Deletion</h3>
       <p>You can delete all your data at any time from within the app (Settings → Delete All Data). Uninstalling the app also permanently removes all data from your device.</p>
-
       <hr class="data-divider">
-
       <p>For full details, read our <a href="privacy.html">complete Privacy Policy</a>.</p>
     </div>
   </div>
-
-  <!-- Values -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Our Promise</div>
     <div class="section-title">What we stand for</div>
     <div class="values-grid">
-      <div class="value-card">
-        <div class="value-num">01</div>
-        <h3>Your data is yours</h3>
-        <p>Never uploaded, never shared, never sold. Period.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-num">02</div>
-        <h3>No dark patterns</h3>
-        <p>No manipulative design. No tricks to keep you hooked.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-num">03</div>
-        <h3>Transparent</h3>
-        <p>What you see is what you get. Honest apps for honest people.</p>
-      </div>
+      <div class="value-card"><div class="value-num">01</div><h3>Your data is yours</h3><p>Never uploaded, never shared, never sold. Period.</p></div>
+      <div class="value-card"><div class="value-num">02</div><h3>No dark patterns</h3><p>No manipulative design. No tricks to keep you hooked.</p></div>
+      <div class="value-card"><div class="value-num">03</div><h3>Transparent</h3><p>What you see is what you get. Honest apps for honest people.</p></div>
     </div>
   </div>
-
-  <!-- Tech -->
   <div class="section" style="padding-top:0">
     <div class="section-label">Tech Stack</div>
     <div class="section-title">Built with modern tools</div>
     <div class="tech-row">
-      <span class="tech-pill">React Native</span>
-      <span class="tech-pill">Expo SDK 56</span>
-      <span class="tech-pill">TypeScript</span>
-      <span class="tech-pill">SQLite</span>
-      <span class="tech-pill">Zustand</span>
-      <span class="tech-pill">React Native Paper</span>
-      <span class="tech-pill">Expo Router</span>
-      <span class="tech-pill">Node.js</span>
-      <span class="tech-pill">Express</span>
-      <span class="tech-pill">Google OAuth</span>
+      <span class="tech-pill">React Native</span><span class="tech-pill">Expo SDK 56</span><span class="tech-pill">TypeScript</span><span class="tech-pill">SQLite</span><span class="tech-pill">Zustand</span><span class="tech-pill">React Native Paper</span><span class="tech-pill">Expo Router</span><span class="tech-pill">Node.js</span><span class="tech-pill">Express</span><span class="tech-pill">Google OAuth</span>
     </div>
   </div>
-
-  <!-- CTA -->
   <div class="cta">
     <h2>Ready to get started?</h2>
     <p>Download the app and take control of your data.</p>
-    <a class="cta-btn" href="mailto:rupitim03@gmail.com">Contact Us</a>
+    <div>
+      <a class="cta-btn" href="privacy.html">Read Our Privacy Policy</a>
+      <a class="cta-btn cta-btn-outline" href="mailto:rupitim03@gmail.com">Contact Us</a>
+    </div>
   </div>
-
-  <!-- Footer -->
   <footer>
     <p>
       <a href="privacy.html">Privacy Policy</a> &nbsp;&bull;&nbsp;
-      <a href="mailto:rupitim03@gmail.com">Contact</a>
+      <a href="mailto:rupitim03@gmail.com">Contact</a> &nbsp;&bull;&nbsp;
+      <a href="sitemap.xml">Sitemap</a>
     </p>
     <p>Made with &#10084;&#65039; by TIM</p>
   </footer>
-
 </body>
 </html>
